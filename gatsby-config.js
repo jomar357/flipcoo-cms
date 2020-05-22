@@ -48,6 +48,7 @@ module.exports = {
         spaceId: "yykcyof9d68d",
         accessToken:  "ieoT5PZ5Yu71lBTL0B_PrQPhWdjrtTmuncHQEkAyBhM",
       },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
