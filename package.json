@@ -7,10 +7,14 @@
     "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
   },
   "dependencies": {
+    "acorn": "^7.2.0",
+    "bootstrap": "^4.5.0",
     "gatsby-image": "^2.3.4",
+    "gatsby-plugin-manifest": "^2.4.8",
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-sharp": "^2.5.6",
     "gatsby-source-contentful": "^2.2.9",
+    "gatsby-source-filesystem": "^2.3.7",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",
     "lodash": "^4.17.15",
