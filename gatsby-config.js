@@ -44,10 +44,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: "yykcyof9d68d",
-        accessToken:  "ieoT5PZ5Yu71lBTL0B_PrQPhWdjrtTmuncHQEkAyBhM",
-      },
+      options: contentfulConfig,
     },
     {
       resolve: `gatsby-plugin-manifest`,
