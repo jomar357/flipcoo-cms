@@ -6,8 +6,8 @@ import Navigation from './navigation'
 import { Helmet } from "react-helmet"
 import HeaderNav from "./HeaderNavigation"
 import FooterNav from "./FooterNavigation"
-import "./layout.css"
 import "./styles.css"
+import "./layout.css"
 import "./five-column-grid.css"
 
 

@@ -5,266 +5,126 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import ContactForm from "../components/ContactForm"
 import ArticlePreview from '../components/article-preview'
-import GetFlipcooImg from "../images/get-flipcoo.png"
-import FindProductsImg from "../images/find-products.png"
-import ListItemsImg from "../images/list-your-items.png"
-import SellNowImg from "../images/sell-now.png"
-import ReadyToShipImg from "../images/ready-to-ship.png"
-import InfograpImg from "../images/infograp.png"
 
-import BiggerProfitImg from "../images/bigger-profit.png"
-import DividerPurplerImg from "../images/divider-purple.png"
-import FastDispatchImg from "../images/fast-dispatch.png"
-import CompatibilityImg from "../images/compatibility.png"
-import IronHairStraightenerImg from "../images/iron-hair-straightener.png"
-import ProfessionalYogaMatImg from "../images/professional-yoga-mat.png"
-import OutdoorWaterBottleImg from "../images/outdoor-water-bottle.png"
-import WirelessComputerMouseImg from "../images/wireless-computer-mouse.png"
-import ShipcooImg from "../images/shipcoo-logo.png"
+import FindProductsImg from "../images/why-us/find-products.png"
+import FullProductDataImg from "../images/why-us/full-product-data.png"
+import InventoryManagementSystemImg from "../images/why-us/inventory-management-system.png"
+import AdvancedSearchImg from "../images/why-us/advanced-search-and-filter-capability.png"
+import DataExportsImg from "../images/why-us/data-exports.png"
+import ProActiveInventoryAlertsImg from "../images/why-us/proactive-inventory-alerts.png"
+import TrustfulLogisticImg from "../images/why-us/trustful-logistic-partner.png"
 
-import CoupangImg from "../images/coupang.png"
-import ShopifyImg from "../images/shopify.png"
-import EbayImg from "../images/ebay.png"
-import AmazonImg from "../images/amazon.png"
-import LazadaImg from "../images/lazada.png"
 
-class RootIndex extends React.Component {
+class WhyUsPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <div className="container-fluid" id="hero-section">
+          <Helmet title="Why Us" />
+          <div className="container-fluid" id="why-us-hero-section">
             <div className="row">
               <div className="col-lg-12 text-center">
                 <div className="hero-content"> 
-                  <h1>Flip and Earn!</h1>
-                  <p className="lead">Curated products from trustworthy factories, crisp product images, detailed descriptions, hassle free streamlined order management and ontime shipping directly to your customer</p>
+                  <h1>Why Flipcoo</h1>
+                  <p className="lead">Starting Your Online Business Has Never Been so Simplified</p>
                 </div>
                 <a href="#" className="btn btn-primary">Get Started For Free</a>
               </div>
             </div>
           </div>
-          <div className="container text-center" id="services-section">
-            <div className="row">
-              <div className="col-lg-12">
-                <h2>How Does Flipcoo Work</h2>
-                <p>We have hundreds of qualified products into our platform.</p>
-                <p>You can sell products without the need of having to buy inventory upfront or pack and ship orders.</p>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-1">
+            <div class="row">
+              <div class="col-lg-6 text-left">
+                <h2>Find Products to Sell Online</h2>
+                <p>When you join Flipcoo, you get immediate access to products from hundreds of suppliers. Discover curated products that you can sell on your store. Choose from niches such as electronics, home decor, sports, beauty and many more.</p>
               </div>
-              <div className="col-lg-12">  
-                <div className="flipcoo-work">
-                  <div className="col-lg-5th-1 col-lg-4">
-                    <img src={GetFlipcooImg} alt="get flipcoo" />
-                    <h4>Get Flipcoo</h4>
-                    <p>Sign up for a FREE <br />Flipcoo account</p>
-                  </div>
-                  <div className="col-lg-5th-1 col-lg-4">
-                    <img src={FindProductsImg} alt="find products" />
-                    <h4>Find Products</h4>
-                    <p>Find awesome products to sell online</p>
-                  </div>
-                  <div className="col-lg-5th-1 col-lg-4">
-                    <img src={ListItemsImg} alt="list your items" />
-                    <h4>List Your Items</h4>
-                    <p>List the products for your store or marketplace</p>
-                  </div>
-                  <div className="col-lg-5th-1 col-lg-4">
-                    <img src={SellNowImg} alt="sell now" />
-                    <h4>Sell Now</h4>
-                    <p>Sell and get the products from Flipcoo</p>
-                  </div>
-                  <div className="col-lg-5th-1 col-lg-4">
-                    <img src={ReadyToShipImg} alt="ready to ship" />
-                    <h4>Ready to Ship</h4>
-                    <p>Ship the product directly to your customers</p>
-                  </div>
-                  <div className="clear"></div>
-                </div>
-              </div>
+              <div class="col-lg-6">
+                <img src={FindProductsImg} alt="find products to sell online" class="" />
+              </div> 
             </div>
-            <div className="row" id="one-stop-solution">
-              <div className="col-lg-12">
-                <h2>One Stop Solution for Ecommerce Retailers</h2>
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-2">    
+            <div class="row">
+              <div class="col-lg-6">
+                <img src={FullProductDataImg} alt="full product data" class="" />
               </div>
-              <div className="col-lg-9 infograp">
-                <img src={InfograpImg} alt="infograp" />
-              </div>
-              <div className="col-lg-3 features">
-                <div className="feature-item"> 
-                  <div className="col-lg-8">
-                    <h3>Bigger Profit</h3>
-                  </div>
-                  <div className="col-lg-4">
-                    <img src={BiggerProfitImg} alt="bigger profit" className="bigger-profit" />
-                  </div>
-                  <img src={DividerPurplerImg} alt="divider-purple" className="divider-purple" />
-                </div>
-                <div className="feature-item"> 
-                  <div className="col-lg-8">
-                    <h3 className="top-45">Fast Dispatch</h3>
-                  </div>
-                  <div className="col-lg-4">
-                    <img src={FastDispatchImg} alt="fast dispatch" />
-                  </div>
-                  <img src={DividerPurplerImg} alt="divider-purple" className="divider-purple" />
-                </div>
-                <div className="feature-item"> 
-                  <div className="col-lg-8">
-                    <h3>Compatibility</h3>
-                  </div>
-                  <div className="col-lg-4">
-                    <img src={CompatibilityImg} alt="compatibility" className="compatibility" />
-                  </div>
-                  <img src={DividerPurplerImg} alt="divider-purple" className="divider-purple" />
-                </div>
-                <a href="#" className="btn btn-light btn-secondary">See All Features</a>
-              </div>
+              <div class="col-lg-6 text-right">
+                <h2>Full Product Data</h2>
+                <p>Flipcoo helps you prepare basic yet detailed digital product data such as delicate pictures, keyword ready product titles and ecommerce ready descriptions, all you need is just select the product that you are familiar with and list it on your store.</p>
+              </div> 
             </div>
-            <div className="row" id="best-selling-row">
-              <div className="col-lg-12">
-                <h2>New and Best-Selling Products in the Flipcoo Platform</h2>
-                <p>Flipcoo gives you access to hundreds of awesome products. Looking for one to sell in your store?</p>
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-3">
+            <div class="row">
+              <div class="col-lg-6 text-left">
+                <h2>Inventory Management System</h2>
+                <p>Our inventory management system helps you organize lists of products for bulk export to your store or preferred marketplace. Inventory lists allow you yo organize products your way. Create lists by selling channel, niche, pricepoint, product count or any way that fits your needs.</p>
               </div>
+              <div class="col-lg-6">
+                <img src={InventoryManagementSystemImg} alt="inventory management system" class="" />
+              </div> 
             </div>
-            <div className="row" id="product-row">
-              <div className="col-md-3">
-                <div className="product">
-                  <img src={IronHairStraightenerImg} alt="iron hair straightener" />
-                  <p className="product-name">Iron Hair Straightener</p>
-                  <p className="product-price">$39.99</p>
-                  <a href="#" className="btn btn-light btn-secondary">Start Selling Now</a>
-                </div>  
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-4">    
+            <div class="row">
+              <div class="col-lg-6">
+                <img src={AdvancedSearchImg} alt="advanced search and filter capability" class="" />
               </div>
-              <div className="col-md-3">
-                <div className="product">
-                  <img src={ProfessionalYogaMatImg} alt="professional yoga mat" />
-                  <p className="product-name">Professional Yoga Mat</p>
-                  <p className="product-price">$22.99</p>
-                  <a href="#" className="btn btn-light btn-secondary">Start Selling Now</a>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="product">
-                  <img src={OutdoorWaterBottleImg} alt="outdoor water bottle" />
-                  <p className="product-name">Outdoor Water Bottle</p>
-                  <p className="product-price">$15.99</p>
-                  <a href="#" className="btn btn-light btn-secondary">Start Selling Now</a>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="product">
-                  <img src={WirelessComputerMouseImg} alt="wireless computer mouse" />
-                  <p className="product-name">Wireless Computer Mouse</p>
-                  <p className="product-price">$25.99</p>
-                  <a href="#" className="btn btn-light btn-secondary">Start Selling Now</a>
-                </div>
-              </div>  
+              <div class="col-lg-6 text-right">
+                <h2>Advanced Search and Filter Capability</h2>
+                <p>Flipcoo helps you categorize your products in our catalog. We've upgraded our search technology and made it easy to layer on relevant filters like price, free or fixed shipping, quantity available and several others.</p>
+              </div> 
             </div>
-            <div className="row" id="logistic-partners">
-              <div className="col-lg-12">
-                <h2>Our Logistic Partner & Integrations</h2>
-                <p><strong>We work hand in hand with <img src={ShipcooImg} alt="shipcoo logo" className="shipcoo-logo" /></strong></p>
-                <p>You don't need to work with a system developer to connect your fulfillment operations to Flipcoo.</p>
-                <p>With a real-time connection, Shipcoo provides complete automation of order fulfillment for direct dropship sales.</p>
-                <p className="carousel-title"><strong>Flipcoo Integrates With the Top Ecommerce Platforms</strong></p>
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-5">
+            <div class="row">
+              <div class="col-lg-6 text-left">
+                <h2>Data Exports</h2>
+                <p>Export your inventory feed from Flipcoo in the specific format of the ecommerce platform of your choice to avoid spending hours of hassle with spreedsheets. Available formats include Shopify, BigCommerce, Amazon, Ebay and more!</p>
               </div>
+              <div class="col-lg-6">
+                <img src={DataExportsImg} alt="data exports" class="" />
+              </div> 
             </div>
-            <div className="row align-items-center">
-              <div className="col-12 col-carousel">
-                <div className="owl-carousel carousel-main">
-                  <div>
-                      <img src={CoupangImg} alt="coupang logo" />
-                  </div>
-                  <div>
-                      <img src={ShopifyImg} alt="shopify logo" />
-                  </div>
-                  <div>
-                      <img src={EbayImg} alt="ebay logo" />
-                  </div>
-                  <div>
-                      <img src={AmazonImg} alt="amazon logo" />
-                  </div>
-                  <div>
-                      <img src={LazadaImg} alt="lazada logo" />
-                  </div>
-                </div>
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-6">    
+            <div class="row">
+              <div class="col-lg-6">
+                <img src={ProActiveInventoryAlertsImg} alt="proactive inventory alerts" class="" />
               </div>
+              <div class="col-lg-6 text-right">
+                <h2>Proactive Inventory Alerts</h2>
+                <p>Flipcoo's custom alerts for low inventory reduces your risk of refunding orders for out-of-stock items. When inventory for one of theses products hits the threshold you specify, we'll let you know.</p>
+              </div> 
             </div>
-            <div className="row" id="pricing-title">
-              <div className="col-lg-12">
-                <h2>Pricing Plans</h2>
-                <p>We offer different solutions for your business. Check out our pricing plans and find out what works best for you!</p>
-              </div>  
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-7">    
+            <div class="row">
+              <div class="col-lg-6">
+              </div>
+              <div class="col-lg-6 text-right">
+                <h2>Automate your Dropshipping</h2>
+                <p>Flipcoo allows you to add products to your store directly from our integrated eCommerce platforms with only a couple clicks. The extension also automates fulfillment so you can focus on making more sales.</p>
+              </div> 
             </div>
-            <div className="row" id="pricing-plans">
-              <div className="col-lg-4">
-                <div className="pricing">
-                  <h3>Lite</h3>
-                  <div className="price-desc">
-                    <h4>Free</h4>
-                    <p>All the dropshipping basics<br/> you need to get started.</p>
-                    <ul>
-                      <li>Unlimited monthly orders</li>
-                      <li>Flipcoo Deals weekly emails</li>
-                      <li>Automated product pricing</li>
-                      <li>Inventory updates</li>
-                      <li>Access to 50k+ products</li>
-                    </ul>  
-                  </div>
-                </div>  
+          </div>
+          <div class="container-fluid text-center why-us-services" id="why-us-section-8">
+            <div class="row">
+              <div class="col-lg-6 text-left">
+                <h2>Trustful Logistic Partner</h2>
+                <p>Flipcoo, an affiliated company of Shipcoo. Flipcoo and Shipcoo are connected. Drop Ship purchases completed through the Flipcoo marketplace automates into your Shipcoo account. The arrangement creates and integrated sales channel for product distribution, which promises increased order visibility and efficient automated delivery.</p>
               </div>
-              <div className="col-lg-4">
-                <div className="pricing">
-                  <h3>Professional</h3>
-                  <div className="price-desc">
-                    <h4>$59.99 <span>/month</span></h4>
-                    <p>Features for taking your drop-shipping business to the next level.</p>
-                    <ul>
-                      <li>Real time orders tracking</li>
-                      <li>Orders fulfillment monitoring</li>
-                      <li>One premium data export</li>
-                      <li>Access to all Flipcoo suppliers</li>
-                      <li>Access to 60k+ products</li>
-                    </ul>  
-                  </div>
-                </div>  
-              </div>
-              <div className="col-lg-4">
-                <div className="pricing">
-                  <h3>Lite</h3>
-                  <div className="price-desc">
-                    <h4>$129.99 <span>/month</span></h4>
-                    <p>Professional functionality when it's time to scale your business.</p>
-                    <ul>
-                      <li>Multiple staff accounts</li>
-                      <li>Place multiple orders with one click</li>
-                      <li>Dedicated account manager</li>
-                      <li>Merchandising services</li>
-                      <li>API Integration</li>
-                    </ul>  
-                  </div>
-                </div>  
-              </div>
-            </div>
-          </div>    
-          <div className="container-fluid text-center " id="orange-section">
-            <div className="row">
-              <div className="col-lg-12">
-                <h2>Create a Free Flipcoo Account Today!</h2>
-                <p>Browse our hottest product feeds, integrations and automation tools.</p>
-                <p>We've made it easier than ever to try our platform.</p>
-                <a href="#" className="btn btn-primary">Get Started For Free</a>
-              </div>  
+              <div class="col-lg-6">
+                <img src={TrustfulLogisticImg} alt="trustful logistic partner" class="" />
+              </div> 
             </div>
           </div>
         </div>
-        <ContactForm />
       </Layout>
     )
   }
 }
 
-export default RootIndex
+export default WhyUsPage

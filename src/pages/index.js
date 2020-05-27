@@ -5,13 +5,15 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import ContactForm from "../components/ContactForm"
 import ArticlePreview from '../components/article-preview'
+import IconSlider from "../components/OwlCarousel"
+import IconSliderMobile from "../components/OwlCarousel/owl-slider-mobile"
+
 import GetFlipcooImg from "../images/get-flipcoo.png"
 import FindProductsImg from "../images/find-products.png"
 import ListItemsImg from "../images/list-your-items.png"
 import SellNowImg from "../images/sell-now.png"
 import ReadyToShipImg from "../images/ready-to-ship.png"
 import InfograpImg from "../images/infograp.png"
-
 import BiggerProfitImg from "../images/bigger-profit.png"
 import DividerPurplerImg from "../images/divider-purple.png"
 import FastDispatchImg from "../images/fast-dispatch.png"
@@ -31,6 +33,7 @@ import LazadaImg from "../images/lazada.png"
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
@@ -174,25 +177,14 @@ class RootIndex extends React.Component {
                 <p className="carousel-title"><strong>Flipcoo Integrates With the Top Ecommerce Platforms</strong></p>
               </div>
             </div>
-            <div className="row align-items-center">
+            <div className="row align-items-center owl-slider">
               <div className="col-12 col-carousel">
-                <div className="owl-carousel carousel-main">
-                  <div>
-                      <img src={CoupangImg} alt="coupang logo" />
-                  </div>
-                  <div>
-                      <img src={ShopifyImg} alt="shopify logo" />
-                  </div>
-                  <div>
-                      <img src={EbayImg} alt="ebay logo" />
-                  </div>
-                  <div>
-                      <img src={AmazonImg} alt="amazon logo" />
-                  </div>
-                  <div>
-                      <img src={LazadaImg} alt="lazada logo" />
-                  </div>
-                </div>
+                <IconSlider />
+              </div>
+            </div>
+            <div className="row align-items-center owl-slider-mobile">
+              <div className="col-12 col-carousel">
+                <IconSliderMobile />
               </div>
             </div>
             <div className="row" id="pricing-title">
