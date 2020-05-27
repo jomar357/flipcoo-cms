@@ -13,8 +13,8 @@ const FooterNav = () => (
         <a href="#">Privacy & Policy</a>
       </div>
       <div className="col-lg-9">
-        <a href="#">Why Us</a>
-        <a href="#">Pricing</a>
+        <a href="/why-us/">Why Us</a>
+        <a href="/pricing/">Pricing</a>
         <a href="#">Hot Products</a>
         <a href="#">Community</a>
         <a href="#">Contact Us</a>

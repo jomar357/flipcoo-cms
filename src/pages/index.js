@@ -5,9 +5,6 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import ContactForm from "../components/ContactForm"
 import ArticlePreview from '../components/article-preview'
-import IconSlider from "../components/OwlCarousel"
-import IconSliderMobile from "../components/OwlCarousel/owl-slider-mobile"
-
 import GetFlipcooImg from "../images/get-flipcoo.png"
 import FindProductsImg from "../images/find-products.png"
 import ListItemsImg from "../images/list-your-items.png"
@@ -29,6 +26,18 @@ import ShopifyImg from "../images/shopify.png"
 import EbayImg from "../images/ebay.png"
 import AmazonImg from "../images/amazon.png"
 import LazadaImg from "../images/lazada.png"
+import Loadable from "react-loadable"
+const loader=()=>(<div>Loading...</div>)
+
+const MyLoadableCarousel = Loadable({
+  loader: () => import("../components/OwlCarousel"),
+  loading: loader,
+})
+
+const MyLoadableCarouselMobile = Loadable({
+  loader: () => import("../components/OwlCarousel/owl-slider-mobile"),
+  loading: loader,
+})
 
 class RootIndex extends React.Component {
   render() {
@@ -179,12 +188,12 @@ class RootIndex extends React.Component {
             </div>
             <div className="row align-items-center owl-slider">
               <div className="col-12 col-carousel">
-                <IconSlider />
+                <MyLoadableCarousel />
               </div>
             </div>
             <div className="row align-items-center owl-slider-mobile">
               <div className="col-12 col-carousel">
-                <IconSliderMobile />
+                <MyLoadableCarouselMobile />
               </div>
             </div>
             <div className="row" id="pricing-title">

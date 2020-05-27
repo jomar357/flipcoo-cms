@@ -809,8 +809,92 @@ button:focus, button:active {
   }
 }
 
-
 /* End of Why Us - Page */
+
+/* Pricing Page */
+
+#services-section.pricing {
+  padding-bottom:30px;
+}
+
+#pricing-plans .col-lg-4 {
+  border-radius: 10px;
+}
+
+#pricing-plans .col-lg-4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: -3px 22px 20px 21px;
+    border-radius: inherit;
+    background: linear-gradient(to right, #a764a4, #4e64ad, #4a3b82);
+}
+
+#pricing-hero-section {
+  background: url(../images/pricing/hero-section-bg.png);
+  background-position: center center;
+  color: #000;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-size: cover;
+}
+
+#pricing-hero-section .hero-content {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: none;
+  background: transparent;
+  padding: 10px 0;
+}
+
+#pricing-hero-section h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#pricing-hero-section .lead {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  color: #fff;
+}
+
+.pricing #pricing-plans {
+  padding-bottom: 0
+}
+
+#pricing-section-1 {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.pricing-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color:#000;
+}
+
+.pricing-section .row {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-section p {
+  color: #4d4d4d;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2.5;
+}
+
 
 /* owl nav */
 .col-carousel .owl-carousel .owl-nav button.owl-prev {
