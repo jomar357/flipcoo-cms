@@ -5,14 +5,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import ContactForm from "../components/ContactForm"
 import ArticlePreview from '../components/article-preview'
-import FindProductsImg from "../images/why-us/find-products.png"
-import FullProductDataImg from "../images/why-us/full-product-data.png"
-import InventoryManagementSystemImg from "../images/why-us/inventory-management-system.png"
-import AdvancedSearchImg from "../images/why-us/advanced-search-and-filter-capability.png"
-import DataExportsImg from "../images/why-us/data-exports.png"
-import ProActiveInventoryAlertsImg from "../images/why-us/proactive-inventory-alerts.png"
-import TrustfulLogisticImg from "../images/why-us/trustful-logistic-partner.png"
-
+import FaqAccordion from "../components/Accordions/faq"
 
 class PricingPage extends React.Component {
   render() {
@@ -21,7 +14,7 @@ class PricingPage extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
-          <Helmet title="Pricing" />
+          <Helmet title="Our Pricing Packages | Flipcoo" />
           <div className="container-fluid" id="pricing-hero-section">
             <div className="row">
               <div className="col-lg-12 text-center">
@@ -33,7 +26,7 @@ class PricingPage extends React.Component {
               </div>
             </div>
           </div>
-          <div class="container text-center pricing" id="services-section">
+          <div className="container text-center pricing-section" id="services-section">
             <div className="row" id="pricing-plans">
               <div className="col-lg-4">
                 <div className="pricing">
@@ -85,10 +78,11 @@ class PricingPage extends React.Component {
               </div>
             </div>
           </div>
-          <div class="container-fluid text-center pricing-section" id="pricing-section-1">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+          <div className="container text-center pricing-section" id="pricing-section-1">
+            <div className="row">
+              <div className="col-lg-12 text-center">
                 <h2>Frequently Asked Questions</h2>
+                <FaqAccordion />
               </div>
             </div>
           </div>

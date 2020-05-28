@@ -15,7 +15,7 @@ const FooterNav = () => (
       <div className="col-lg-9">
         <a href="/why-us/">Why Us</a>
         <a href="/pricing/">Pricing</a>
-        <a href="#">Hot Products</a>
+        <a href="/products/">Hot Products</a>
         <a href="#">Community</a>
         <a href="#">Contact Us</a>
         <div className="row" id="social-icons-row">   

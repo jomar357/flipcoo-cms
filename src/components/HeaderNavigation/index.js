@@ -27,7 +27,7 @@ const HeaderNav = () => {
               <a className="nav-link" href="/pricing/">Pricing</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Hot Products</a>
+              <a className="nav-link" href="/products/">Hot Products</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Community</a>
