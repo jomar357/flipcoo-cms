@@ -150,7 +150,7 @@ class CommunityPage extends React.Component {
 					    		<img src={Make5000InDropshippingImg} alt="how can this guy make $5000 in a short time with dropshipping" />
 					    		<div className="community-news-content">
 					    			<h3>How can this guy make $5000 in a short time with dropshipping</h3>
-					    			<p></p>
+					    			<p>If you want to increase traffic to your online store, a wide range of send direct instagram message is a feasible method</p>
 					    			<a className="btn-primary btn-read-more" href="#">
 					    				Read More <i className="fa fa-caret-right"></i>
 					    			</a>
