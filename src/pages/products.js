@@ -78,7 +78,7 @@ class ProductsPage extends React.Component {
 				<div className="container text-center products-section" id="products-section-2">
 					<div className="row">
 					  <div className="col-lg-12 text-center">
-					    <h2>Trending Drropshipping Categories</h2>
+					    <h2>Trending Dropshipping Categories</h2>
 					    <p>We have over 20+ dropship categories to help you cover any niche of your choice.<br /> Signup for a free account to see all our products and categories.</p>
 					  </div>
 					</div>

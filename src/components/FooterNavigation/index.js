@@ -16,7 +16,7 @@ const FooterNav = () => (
         <a href="/why-us/">Why Us</a>
         <a href="/pricing/">Pricing</a>
         <a href="/products/">Hot Products</a>
-        <a href="#">Community</a>
+        <a href="/community/">Community</a>
         <a href="#">Contact Us</a>
         <div className="row" id="social-icons-row">   
           <div className="copyright col-lg-5">

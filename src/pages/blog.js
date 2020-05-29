@@ -15,8 +15,18 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>Blog</div>
-          <div className="wrapper">
+          <div className="container-fluid" id="integration-hero-section">
+            <div className="row">
+                <div className="col-lg-12 text-center">
+                  <div className="hero-content"> 
+                      <h1>Blog</h1>
+                      <p className="lead">Our Blog</p>
+                    </div>
+                  <a href="#" className="btn btn-primary">Get Started For Free</a>
+                </div>
+            </div>
+          </div>
+          <div className="container wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {

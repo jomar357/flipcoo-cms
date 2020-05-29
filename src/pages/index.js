@@ -237,7 +237,7 @@ class RootIndex extends React.Component {
               </div>
               <div className="col-lg-4">
                 <div className="pricing">
-                  <h3>Lite</h3>
+                  <h3>Enterprise</h3>
                   <div className="price-desc">
                     <h4>$129.99 <span>/month</span></h4>
                     <p>Professional functionality when it's time to scale your business.</p>
