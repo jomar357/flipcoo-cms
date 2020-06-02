@@ -53,14 +53,14 @@ class ProductsPage extends React.Component {
 					      <h1>Flipcoo's Hottest Products</h1>
 					      <p className="lead">Checkout some popular picks below <br /> Sign up for a free Flipcoo account to see all our dropship products</p>
 					    </div>
-					    <a href="#" className="btn btn-primary">Get Started For Free</a>
+					    <a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
 					  </div>
 					</div>
 				</div>
 				<div className="container text-center products-section" id="products-section-1">
 					<div className="row">
 					  <div className="col-lg-12 text-center">
-					    <h2>New and Best Selling Products in Flipcoo Platform</h2>
+					    <h2>New and Best-Selling Products in Flipcoo Platform</h2>
 					    <p>Flipcoo gives you access to hundreds of awesome products. Looking for one to sell in your store?</p>
 					  </div>
 					</div>

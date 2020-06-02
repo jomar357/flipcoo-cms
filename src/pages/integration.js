@@ -45,7 +45,7 @@ class IntegrationPage extends React.Component {
 					      		<h1>Integration With eCommerce Platforms</h1>
 					      		<p className="lead">We take care of the backend operation so that you can focus on what you love: driving the growth and success of your dropshipping business</p>
 					    	</div>
-					    	<a href="#" className="btn btn-primary">Get Started For Free</a>
+					    	<a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
 					  	</div>
 					</div>
 				</div>

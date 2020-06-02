@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
                       <h1>Blog</h1>
                       <p className="lead">Our Blog</p>
                     </div>
-                  <a href="#" className="btn btn-primary">Get Started For Free</a>
+                  <a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
                 </div>
             </div>
           </div>

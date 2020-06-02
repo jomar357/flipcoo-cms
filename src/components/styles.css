@@ -290,6 +290,11 @@ img {
 	color:#f05a23;
 }
 
+#product-row .product .btn-secondary:hover {
+  color:#ea5413 !important;
+  background:#fff !important;
+}
+
 #product-row .product .btn-secondary {
   margin-top: 0;
   max-width: 90%;
@@ -297,7 +302,8 @@ img {
   border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
-  color: #4d4d4d;
+  color: #fff;
+  background: #ea5413;
 }
 
 /* Our Logistic Partners */
@@ -459,10 +465,11 @@ button:focus, button:active {
 }
 
 #orange-section .btn-primary {
-	background-image: none;
-	background-color:transparent;
-	border:1px solid #fff;
-	margin-top:30px;
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  color: #f05a25;
 }
 
 #orange-section h2 {
@@ -472,7 +479,8 @@ button:focus, button:active {
 }
 
 #orange-section .btn-primary:hover {
-	color:#fff;
+	background:transparent !important;
+  color:#fff !important;
 }
 
 #orange-section p {
@@ -553,6 +561,7 @@ button:focus, button:active {
 
 .btn-submit:hover {
 	color:#fff;
+  opacity: 0.9;
 }
 
 .contact-input::placeholder {
@@ -1516,6 +1525,12 @@ button:focus, button:active {
 #orange-section.community {
   margin-bottom:50px;
 }
+@media only screen and (min-width: 3600px) {
+  .community-section {
+    max-width:2800px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .community-section {
@@ -1719,7 +1734,12 @@ footer .fa-linkedin {
 }
 
 footer .fa-youtube {
-  background: #bb0000;}
+  background: #bb0000;
+}
+
+footer .fa-pinterest {
+    background: #bb0000;
+}
 
 footer .fa-instagram {
   background: #125688;

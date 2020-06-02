@@ -16,7 +16,7 @@ const HeaderNav = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className={open ? "show collapse navbar-collapse" : "collapse navbar-collapse"} id="navbarResponsive">
-        <div className="col-lg-7">
+        <div className="col-lg-8">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <a className="nav-link" href="/why-us/">Why Us
@@ -27,6 +27,9 @@ const HeaderNav = () => {
               <a className="nav-link" href="/pricing/">Pricing</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="/integration/">Integration</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="/products/">Hot Products</a>
             </li>
             <li className="nav-item">
@@ -34,13 +37,13 @@ const HeaderNav = () => {
             </li>
           </ul>
         </div>
-        <div className="col-lg-5">
+        <div className="col-lg-4">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">Sign In</a>
+              <a className="nav-link" target="_blank" href="https://app.flipcoo.com/login">Sign In</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Get Started</a>
+              <a className="nav-link" target="_blank" href="https://app.flipcoo.com/register">Get Started</a>
             </li>
           </ul>
         </div>

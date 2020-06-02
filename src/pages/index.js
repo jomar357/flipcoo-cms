@@ -20,7 +20,6 @@ import ProfessionalYogaMatImg from "../images/professional-yoga-mat.png"
 import OutdoorWaterBottleImg from "../images/outdoor-water-bottle.png"
 import WirelessComputerMouseImg from "../images/wireless-computer-mouse.png"
 import ShipcooImg from "../images/shipcoo-logo.png"
-
 import CoupangImg from "../images/coupang.png"
 import ShopifyImg from "../images/shopify.png"
 import EbayImg from "../images/ebay.png"
@@ -43,8 +42,6 @@ class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(this, 'props.data.site.siteMetadata.description')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
       <Layout location={this.props.location}>
@@ -55,9 +52,9 @@ class RootIndex extends React.Component {
               <div className="col-lg-12 text-center">
                 <div className="hero-content"> 
                   <h1>Flip and Earn!</h1>
-                  <p className="lead">Curated products from trustworthy factories, crisp product images, detailed descriptions, hassle free streamlined order management and ontime shipping directly to your customer</p>
+                  <p className="lead">Curated products from trustworthy factories, crisp product images, detailed descriptions, hassle free streamlined order management and on-time shipping directly to your customer</p>
                 </div>
-                <a href="#" className="btn btn-primary">Get Started For Free</a>
+                <a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
               </div>
             </div>
           </div>
@@ -180,7 +177,7 @@ class RootIndex extends React.Component {
             <div className="row" id="logistic-partners">
               <div className="col-lg-12">
                 <h2>Our Logistic Partner & Integrations</h2>
-                <p><strong>We work hand in hand with <img src={ShipcooImg} alt="shipcoo logo" className="shipcoo-logo" /></strong></p>
+                <p><strong>We work hand in hand with <a href="https://www.shipcoo.com" target="_blank"><img src={ShipcooImg} alt="shipcoo logo" className="shipcoo-logo" /></a></strong></p>
                 <p>You don't need to work with a system developer to connect your fulfillment operations to Flipcoo.</p>
                 <p>With a real-time connection, Shipcoo provides complete automation of order fulfillment for direct dropship sales.</p>
                 <p className="carousel-title"><strong>Flipcoo Integrates With the Top Ecommerce Platforms</strong></p>
@@ -271,56 +268,3 @@ class RootIndex extends React.Component {
 }
 
 export default RootIndex
-
-export const pageQuery = graphql`
-  query HomeQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-        }
-      }
-    }
-    allContentfulPerson(
-      filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
-    ) {
-      edges {
-        node {
-          name
-          shortBio {
-            shortBio
-          }
-          title
-          heroImage: image {
-            fluid(
-              maxWidth: 1180
-              maxHeight: 480
-              resizingBehavior: PAD
-              background: "rgb:000000"
-            ) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`

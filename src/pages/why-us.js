@@ -29,7 +29,7 @@ class WhyUsPage extends React.Component {
                   <h1>Why Flipcoo</h1>
                   <p className="lead">Starting Your Online Business Has Never Been so Simplified</p>
                 </div>
-                <a href="#" className="btn btn-primary">Get Started For Free</a>
+                <a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ class WhyUsPage extends React.Component {
             <div className="row">
               <div className="col-lg-6 text-left">
                 <h2>Inventory Management System</h2>
-                <p>Our inventory management system helps you organize lists of products for bulk export to your store or preferred marketplace. Inventory lists allow you yo organize products your way. Create lists by selling channel, niche, pricepoint, product count or any way that fits your needs.</p>
+                <p>Our inventory management system helps you organize lists of products for bulk export to your store or preferred marketplace. Inventory lists allow you to organize products your way. Create lists by selling channel, niche, pricepoint, product count or any way that fits your needs.</p>
               </div>
               <div className="col-lg-6">
                 <img src={InventoryManagementSystemImg} alt="inventory management system" className="" />
@@ -113,7 +113,7 @@ class WhyUsPage extends React.Component {
             <div className="row">
               <div className="col-lg-6 text-left">
                 <h2>Trustful Logistic Partner</h2>
-                <p>Flipcoo, an affiliated company of Shipcoo. Flipcoo and Shipcoo are connected. Drop Ship purchases completed through the Flipcoo marketplace automates into your Shipcoo account. The arrangement creates and integrated sales channel for product distribution, which promises increased order visibility and efficient automated delivery.</p>
+                <p>Flipcoo, an affiliated company of Shipcoo. Flipcoo and Shipcoo are connected. Drop Ship purchases completed through the Flipcoo marketplace automates into your Shipcoo account. The arrangement creates an integrated sales channel for product distribution, which promises increased order visibility and efficient automated delivery.</p>
               </div>
               <div className="col-lg-6">
                 <img src={TrustfulLogisticImg} alt="trustful logistic partner" className="" />

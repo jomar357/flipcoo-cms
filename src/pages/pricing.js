@@ -22,7 +22,7 @@ class PricingPage extends React.Component {
                   <h1>Our Pricing Packages</h1>
                   <p className="lead">We offer 3 different levels of pricing plans for any size business - find what fits best for your eCommerce business.</p>
                 </div>
-                <a href="#" className="btn btn-primary">Get Started For Free</a>
+                <a target="_blank" href="https://app.flipcoo.com/register" className="btn btn-primary">Get Started For Free</a>
               </div>
             </div>
           </div>
